@@ -62,3 +62,12 @@
 - Quyết định: Kế thừa Astro strict TypeScript config.
 - Lý do: Phát hiện lỗi sớm và giữ code dễ bảo trì.
 - Hệ quả: Không dùng `any` nếu không có lý do rõ ràng.
+
+## ADR-008 — Tìm kiếm toàn văn tĩnh tại client
+
+- Ngày: 2026-07-25
+- Trạng thái: Accepted
+- Bối cảnh: Website cần tìm kiếm trong 48 bài nhưng MVP không có backend hoặc database.
+- Quyết định: Sinh JSON index từ Markdown lúc build và lọc kết quả trong trình duyệt.
+- Lý do: Đủ cho quy mô 48 bài, không thêm dịch vụ bên ngoài hoặc dependency tìm kiếm nặng.
+- Hệ quả: Search index được tải khi người đọc mở trang danh sách; cần đánh giá lại nếu số lượng nội dung tăng đáng kể.

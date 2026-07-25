@@ -30,8 +30,8 @@ Bài được đặt trong `src/content/interview/` và được kiểm tra bở
 
 ## Client JavaScript
 
-Ưu tiên HTML và CSS. Chỉ bổ sung JavaScript phía client cho tương tác có giá trị rõ ràng, cô lập phạm vi và không ảnh hưởng luồng đọc nội dung chính.
+Ưu tiên HTML và CSS. Chỉ bổ sung JavaScript phía client cho tương tác có giá trị rõ ràng, cô lập phạm vi và không ảnh hưởng luồng đọc nội dung chính. Tìm kiếm toàn văn tải một JSON index được sinh lúc build từ nội dung Markdown và chỉ lọc danh sách ở trình duyệt, không cần backend hay database.
 
 ## Khả năng mở rộng và deploy
 
-Schema tập trung, layout tách biệt và route theo slug giúp bổ sung category, tag, RSS và search mà không thay đổi nội dung nguồn. Ở bước sau, production output `dist/` sẽ được deploy lên Cloudflare Pages.
+Schema tập trung, layout tách biệt và route theo slug giúp bổ sung category, tag, RSS và search mà không thay đổi nội dung nguồn. Static build hiện tạo `rss.xml`, `robots.txt`, search index và sitemap. URL site trong `astro.config.mjs` là hostname Cloudflare Pages tạm thời và phải đổi sang domain production trước khi deploy. Ở bước sau, production output `dist/` sẽ được deploy lên Cloudflare Pages.

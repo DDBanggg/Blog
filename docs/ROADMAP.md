@@ -24,7 +24,7 @@
 - Deliverables: `/interview/`, `/interview/[slug]/`, category/tag, TOC, previous/next.
 - Exit criteria: toàn bộ 48 bài truy cập đúng route.
 
-## Phase 4: Search, SEO and RSS — Chưa bắt đầu
+## Phase 4: Search, SEO and RSS — Hoàn thành
 
 - Mục tiêu: cải thiện khám phá và chia sẻ nội dung.
 - Deliverables: full-text search, metadata SEO, sitemap và RSS.

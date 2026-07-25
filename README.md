@@ -61,4 +61,6 @@ Sau mỗi bước lớn, cập nhật `docs/PROGRESS.md`, trạng thái và chec
 
 ## Trạng thái hiện tại
 
-Phase 0 đến Phase 3 đã hoàn thành: dự án Astro, Content Collection `interview`, 48 bài Markdown đã được chuẩn hoá và xuất bản thành static routes, layout dùng chung với header/footer, danh sách câu hỏi và trang chi tiết có điều hướng cơ bản. Cloudflare Pages là mục tiêu deploy ở bước sau.
+Phase 0 đến Phase 4 đã hoàn thành: dự án Astro, Content Collection `interview`, 48 bài Markdown đã được chuẩn hoá và xuất bản thành static routes, layout dùng chung, danh sách/từng bài, tìm kiếm toàn văn, SEO metadata, sitemap và RSS. Cloudflare Pages là mục tiêu deploy ở bước sau.
+
+URL chuẩn tạm thời là `https://data-engineering-interview-blog.pages.dev`; thay URL này trong `astro.config.mjs` bằng domain deploy thật trước Phase 5.

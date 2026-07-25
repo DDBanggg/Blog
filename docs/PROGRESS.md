@@ -1,5 +1,14 @@
 # Progress Log
 
+## 2026-07-25 — Thêm search, SEO, sitemap và RSS
+
+- Mục tiêu: cải thiện khả năng tìm thấy, subscribe và index website.
+- Công việc đã thực hiện: tạo search index JSON tại build time và ô tìm kiếm toàn văn; thêm canonical, Open Graph, RSS discovery, `robots.txt`, `rss.xml` và sitemap chính thức của Astro.
+- File quan trọng đã thay đổi: `astro.config.mjs`, `src/layouts/BaseLayout.astro`, `src/pages/interview/index.astro`, `src/pages/search-index.json.ts`, `src/pages/rss.xml.ts`, `src/pages/robots.txt.ts`.
+- Kết quả kiểm tra: format, lint, Astro check và build thành công. Build xác minh search index có 48 entry, RSS có 48 item, sitemap có index và 49 URL interview.
+- Vấn đề còn tồn tại: URL chuẩn đang là hostname Cloudflare Pages tạm thời `https://data-engineering-interview-blog.pages.dev`.
+- Bước tiếp theo: thay URL chuẩn bằng domain deploy thật, thực hiện QA và deploy Cloudflare Pages ở Phase 5.
+
 ## 2026-07-25 — Xuất bản danh sách và trang chi tiết interview
 
 - Mục tiêu: tạo route tĩnh để người đọc duyệt và đọc 48 câu hỏi.

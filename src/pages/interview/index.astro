@@ -18,10 +18,37 @@ const description = 'Danh sách 48 câu hỏi phỏng vấn Data Engineer theo c
       <p class="mt-5 text-lg leading-8 text-slate-700 dark:text-slate-300">{description}</p>
     </header>
 
-    <ol class="mt-12 grid gap-4 sm:grid-cols-2" aria-label="Danh sách câu hỏi phỏng vấn">
+    <div class="mt-10 max-w-3xl">
+      <label
+        for="interview-search"
+        class="text-sm font-semibold text-slate-900 dark:text-slate-100"
+      >
+        Tìm kiếm trong 48 câu hỏi
+      </label>
+      <input
+        id="interview-search"
+        type="search"
+        placeholder="Ví dụ: Hadoop, SQL, data pipeline..."
+        autocomplete="off"
+        class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-offset-4 placeholder:text-slate-500 focus:border-cyan-600 focus-visible:outline-2 focus-visible:outline-cyan-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-400"
+      />
+      <p
+        id="search-status"
+        class="mt-3 text-sm text-slate-600 dark:text-slate-400"
+        aria-live="polite"
+      >
+        Nhập từ khoá để tìm trong tiêu đề, tag và nội dung bài viết.
+      </p>
+    </div>
+
+    <ol
+      id="interview-list"
+      class="mt-12 grid gap-4 sm:grid-cols-2"
+      aria-label="Danh sách câu hỏi phỏng vấn"
+    >
       {
         entries.map((entry) => (
-          <li>
+          <li data-interview-id={entry.id}>
             <a
               href={`/interview/${entry.id}`}
               class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-6 outline-offset-4 transition-colors hover:border-cyan-500 hover:bg-cyan-50 focus-visible:outline-2 focus-visible:outline-cyan-600 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-cyan-400 dark:hover:bg-slate-900"
@@ -62,3 +89,50 @@ const description = 'Danh sách 48 câu hỏi phỏng vấn Data Engineer theo c
     </ol>
   </main>
 </BaseLayout>
+
+<script>
+  type SearchEntry = {
+    id: string;
+    searchText: string;
+  };
+
+  const input = document.querySelector<HTMLInputElement>('#interview-search');
+  const status = document.querySelector<HTMLParagraphElement>('#search-status');
+  const cards = Array.from(document.querySelectorAll<HTMLLIElement>('[data-interview-id]'));
+  const normalize = (value: string) =>
+    value
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLocaleLowerCase('vi-VN');
+
+  if (input && status) {
+    const searchIndex = await fetch('/search-index.json').then(async (response) => {
+      if (!response.ok) {
+        throw new Error('Không thể tải chỉ mục tìm kiếm.');
+      }
+
+      return (await response.json()) as SearchEntry[];
+    });
+    const searchableEntries = new Map(
+      searchIndex.map((entry) => [entry.id, normalize(entry.searchText)]),
+    );
+
+    input.addEventListener('input', () => {
+      const query = normalize(input.value.trim());
+      const terms = query.split(/\s+/).filter(Boolean);
+      let visibleCount = 0;
+
+      for (const card of cards) {
+        const searchableText = searchableEntries.get(card.dataset.interviewId ?? '') ?? '';
+        const matches = terms.every((term) => searchableText.includes(term));
+        const isVisible = terms.length === 0 || matches;
+
+        card.hidden = !isVisible;
+        visibleCount += Number(isVisible);
+      }
+
+      status.textContent =
+        terms.length === 0 ? 'Hiển thị tất cả 48 câu hỏi.' : `Tìm thấy ${visibleCount} câu hỏi.`;
+    });
+  }
+</script>

@@ -28,8 +28,8 @@
 
 ## Phase 4: Search, SEO and RSS
 
-- [ ] Thêm tìm kiếm toàn văn tĩnh.
-- [ ] Thêm sitemap, RSS và SEO metadata mở rộng.
+- [x] Thêm tìm kiếm toàn văn tĩnh.
+- [x] Thêm sitemap, RSS và SEO metadata mở rộng.
 
 ## Phase 5: Quality assurance and Cloudflare deployment
 

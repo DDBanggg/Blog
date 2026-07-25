@@ -4,6 +4,8 @@
 
 ### Added
 
+- Tìm kiếm toàn văn client-side từ search index được sinh lúc build.
+- SEO metadata, canonical URL, Open Graph, RSS, robots.txt và sitemap.
 - Trang `/interview/` và 48 trang chi tiết static với mục lục, metadata, nguồn và previous/next.
 - Header, footer, skip link và navigation responsive cho layout dùng chung.
 - 48 bài interview Markdown trong Content Collection `interview`, với frontmatter, category, tag, slug và link nguồn.
