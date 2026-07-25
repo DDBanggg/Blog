@@ -1,5 +1,14 @@
 # Progress Log
 
+## 2026-07-25 — Đồng bộ lockfile cho Cloudflare Pages
+
+- Mục tiêu: khắc phục lỗi `npm ci` trên Cloudflare Pages.
+- Công việc đã thực hiện: tái tạo `package-lock.json` bằng npm 10.9.2, nới ràng buộc npm của project để tương thích npm 10.9+ và xác minh bằng clean install.
+- File quan trọng đã thay đổi: `package.json`, `package-lock.json`, `docs/CHANGELOG.md`.
+- Kết quả kiểm tra: `npx npm@10.9.2 ci` và `npx npm@10.9.2 run build` đều thành công.
+- Vấn đề còn tồn tại: cần push commit sửa lockfile để Cloudflare Pages thực hiện deployment mới.
+- Bước tiếp theo: push `main`, theo dõi build Pages và xác nhận URL production.
+
 ## 2026-07-25 — Thêm search, SEO, sitemap và RSS
 
 - Mục tiêu: cải thiện khả năng tìm thấy, subscribe và index website.

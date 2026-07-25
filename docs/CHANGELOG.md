@@ -20,3 +20,5 @@
 ### Changed
 
 ### Fixed
+
+- Đồng bộ `package-lock.json` với npm 10.9.2 để Cloudflare Pages có thể chạy `npm ci`.

@@ -6,7 +6,7 @@
   "type": "module",
   "engines": {
     "node": ">=24.16 <25",
-    "npm": ">=11 <12"
+    "npm": ">=10.9 <12"
   },
   "scripts": {
     "dev": "astro dev",
