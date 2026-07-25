@@ -61,4 +61,4 @@ Sau mỗi bước lớn, cập nhật `docs/PROGRESS.md`, trạng thái và chec
 
 ## Trạng thái hiện tại
 
-Phase 0 và Phase 1 đã hoàn thành: dự án Astro, Content Collection `interview`, 48 bài Markdown đã được chuẩn hoá, trang tạm thời, cấu hình chất lượng và hệ thống tài liệu đã sẵn sàng. Các bài hiện ở trạng thái draft; Cloudflare Pages là mục tiêu deploy ở bước sau.
+Phase 0 đến Phase 2 đã hoàn thành: dự án Astro, Content Collection `interview`, 48 bài Markdown đã được chuẩn hoá, layout dùng chung với header/footer và điều hướng cơ bản, cấu hình chất lượng và hệ thống tài liệu đã sẵn sàng. Các bài hiện ở trạng thái draft; Cloudflare Pages là mục tiêu deploy ở bước sau.

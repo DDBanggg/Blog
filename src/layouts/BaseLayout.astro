@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import SiteFooter from '../components/layout/SiteFooter.astro';
+import SiteHeader from '../components/layout/SiteHeader.astro';
 
 interface Props {
   description: string;
@@ -21,6 +23,16 @@ const { description, title } = Astro.props;
   <body
     class="min-h-screen bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100"
   >
-    <slot />
+    <a
+      href="#main-content"
+      class="sr-only fixed left-4 top-4 z-50 rounded-md bg-cyan-700 px-4 py-2 font-semibold text-white outline-offset-4 focus:not-sr-only focus-visible:outline-2 focus-visible:outline-cyan-300"
+    >
+      Chuyển đến nội dung chính
+    </a>
+    <div class="flex min-h-screen flex-col">
+      <SiteHeader />
+      <slot />
+      <SiteFooter />
+    </div>
   </body>
 </html>

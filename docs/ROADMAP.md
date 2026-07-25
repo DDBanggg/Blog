@@ -12,7 +12,7 @@
 - Deliverables: 48 Markdown hợp lệ, metadata và media liên quan.
 - Exit criteria: mọi bài qua schema và tuân thủ Content Guide.
 
-## Phase 2: Blog layout and navigation — Chưa bắt đầu
+## Phase 2: Blog layout and navigation — Hoàn thành
 
 - Mục tiêu: xây layout đọc bài và điều hướng dùng chung.
 - Deliverables: header, footer, dark mode hoàn chỉnh, điều hướng cơ bản.

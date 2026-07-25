@@ -1,5 +1,14 @@
 # Progress Log
 
+## 2026-07-25 — Xây layout dùng chung và điều hướng cơ bản
+
+- Mục tiêu: tạo khung giao diện tái sử dụng cho các trang blog trong Phase 3.
+- Công việc đã thực hiện: thêm `SiteHeader`, `SiteFooter`, skip link, navigation theo anchor hợp lệ, layout responsive và dark mode theo `prefers-color-scheme`; cập nhật trang chủ để phản ánh trạng thái 48 bài draft.
+- File quan trọng đã thay đổi: `src/components/layout/SiteHeader.astro`, `src/components/layout/SiteFooter.astro`, `src/layouts/BaseLayout.astro`, `src/pages/index.astro`.
+- Kết quả kiểm tra: `npm run format`, `npm run format:check`, `npm run lint`, `npm run check` và `npm run build` đều thành công.
+- Vấn đề còn tồn tại: chưa có route danh sách hoặc route chi tiết bài interview.
+- Bước tiếp theo: xây `/interview/` và `/interview/[slug]/` ở Phase 3.
+
 ## 2026-07-25 — Chuẩn hoá và migrate nội dung phỏng vấn
 
 - Mục tiêu: chuyển 48 bài nội dung nguồn sang Astro Content Collection `interview`.

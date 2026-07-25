@@ -17,8 +17,8 @@
 
 ## Phase 2: Blog layout and navigation
 
-- [ ] Thiết kế layout đọc bài và các thành phần điều hướng tối thiểu.
-- [ ] Hoàn thiện dark mode và accessibility cơ bản.
+- [x] Thiết kế layout đọc bài và các thành phần điều hướng tối thiểu.
+- [x] Hoàn thiện dark mode và accessibility cơ bản.
 
 ## Phase 3: Interview index and article pages
 
