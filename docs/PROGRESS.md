@@ -1,5 +1,14 @@
 # Progress Log
 
+## 2026-07-25 — Chuẩn hoá và migrate nội dung phỏng vấn
+
+- Mục tiêu: chuyển 48 bài nội dung nguồn sang Astro Content Collection `interview`.
+- Công việc đã thực hiện: trích xuất câu hỏi, URL nguồn và phần trả lời từ 48 tệp nguồn; tạo tên file theo tiền tố hai chữ số, frontmatter hợp lệ, category, tags và slug không dấu trong `src/content/interview/`. Tất cả bài được giữ `draft: true`; không có ảnh nguồn để migrate.
+- File quan trọng đã thay đổi: `src/content/interview/01-*.md` đến `src/content/interview/48-*.md`, `README.md`, `docs/ROADMAP.md`, `docs/TASKS.md`, `docs/CHANGELOG.md`.
+- Kết quả kiểm tra: `npm run check` xác thực 48 content entry với 0 errors, 0 warnings, 0 hints.
+- Vấn đề còn tồn tại: chưa có route, trang danh sách hoặc trang chi tiết để xuất bản các bài draft.
+- Bước tiếp theo: xây blog layout và navigation ở Phase 2.
+
 ## 2026-07-25 — Khởi tạo nền móng dự án
 
 - Mục tiêu: tạo static Astro blog và các quy ước để quản lý bộ 48 câu hỏi.

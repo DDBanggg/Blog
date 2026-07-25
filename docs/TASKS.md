@@ -11,9 +11,9 @@
 
 ## Phase 1: Content model and Markdown migration
 
-- [ ] Rà soát và chuẩn hoá 48 nội dung nguồn.
-- [ ] Chuyển 48 bài vào `src/content/interview/` theo schema.
-- [ ] Kiểm tra metadata, slug, ảnh và link nguồn.
+- [x] Rà soát và chuẩn hoá 48 nội dung nguồn.
+- [x] Chuyển 48 bài vào `src/content/interview/` theo schema.
+- [x] Kiểm tra metadata, slug, ảnh và link nguồn.
 
 ## Phase 2: Blog layout and navigation
 

@@ -4,6 +4,7 @@
 
 ### Added
 
+- 48 bài interview Markdown trong Content Collection `interview`, với frontmatter, category, tag, slug và link nguồn.
 - Nền tảng Astro static site với TypeScript strict.
 - Tailwind CSS 4 qua plugin Vite chính thức.
 - ESLint, Prettier và các script kiểm tra chất lượng.

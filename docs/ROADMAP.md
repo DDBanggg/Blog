@@ -6,7 +6,7 @@
 - Deliverables: cấu hình dự án, Content Collection, trang tạm thời, Git và docs.
 - Exit criteria: các lệnh kiểm tra thành công và initial commit được tạo.
 
-## Phase 1: Content model and Markdown migration — Chưa bắt đầu
+## Phase 1: Content model and Markdown migration — Hoàn thành
 
 - Mục tiêu: chuẩn hoá và chuyển 48 câu hỏi vào collection.
 - Deliverables: 48 Markdown hợp lệ, metadata và media liên quan.
