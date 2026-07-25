@@ -18,7 +18,7 @@
 - Deliverables: header, footer, dark mode hoàn chỉnh, điều hướng cơ bản.
 - Exit criteria: responsive và điều hướng bàn phím tốt.
 
-## Phase 3: Interview index and article pages — Chưa bắt đầu
+## Phase 3: Interview index and article pages — Hoàn thành
 
 - Mục tiêu: xuất bản danh sách và trang chi tiết.
 - Deliverables: `/interview/`, `/interview/[slug]/`, category/tag, TOC, previous/next.

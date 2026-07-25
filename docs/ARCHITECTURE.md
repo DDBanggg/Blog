@@ -14,7 +14,7 @@ flowchart LR
 
 ## Luồng nội dung và route
 
-Bài được đặt trong `src/content/interview/` và được kiểm tra bởi schema trong `src/content.config.ts`. Ở phase sau, Astro sẽ đọc collection để sinh `/interview/` và `/interview/[slug]/`. Template trong `docs/examples/` nằm ngoài collection nên không thể xuất bản nhầm.
+Bài được đặt trong `src/content/interview/` và được kiểm tra bởi schema trong `src/content.config.ts`. Astro đọc collection để sinh `/interview/` và `/interview/[slug]/` trong static build. Template trong `docs/examples/` nằm ngoài collection nên không thể xuất bản nhầm.
 
 ## Ranh giới thư mục
 

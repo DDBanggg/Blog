@@ -1,5 +1,14 @@
 # Progress Log
 
+## 2026-07-25 — Xuất bản danh sách và trang chi tiết interview
+
+- Mục tiêu: tạo route tĩnh để người đọc duyệt và đọc 48 câu hỏi.
+- Công việc đã thực hiện: tạo `/interview/`, `/interview/[slug]/`, metadata bài viết, category/tag, mục lục, nguồn, previous/next và style Markdown; chuyển 48 entry từ `draft: true` sang `draft: false` vì các route đã sẵn sàng xuất bản.
+- File quan trọng đã thay đổi: `src/pages/interview/index.astro`, `src/pages/interview/[slug].astro`, `src/utils/interview.ts`, `src/components/layout/SiteHeader.astro`, `src/pages/index.astro`, `src/content/interview/*.md`.
+- Kết quả kiểm tra: `npm run format`, `npm run format:check`, `npm run lint`, `npm run check` và `npm run build` đều thành công. Build sinh 50 trang tĩnh, gồm 48 bài interview.
+- Vấn đề còn tồn tại: chưa có tìm kiếm toàn văn, sitemap hoặc RSS.
+- Bước tiếp theo: thực hiện Search, SEO và RSS ở Phase 4.
+
 ## 2026-07-25 — Xây layout dùng chung và điều hướng cơ bản
 
 - Mục tiêu: tạo khung giao diện tái sử dụng cho các trang blog trong Phase 3.

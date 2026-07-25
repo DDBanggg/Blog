@@ -22,9 +22,9 @@
 
 ## Phase 3: Interview index and article pages
 
-- [ ] Tạo trang danh sách câu hỏi.
-- [ ] Tạo route bài viết theo slug.
-- [ ] Thêm mục lục, category/tag và previous/next.
+- [x] Tạo trang danh sách câu hỏi.
+- [x] Tạo route bài viết theo slug.
+- [x] Thêm mục lục, category/tag và previous/next.
 
 ## Phase 4: Search, SEO and RSS
 

@@ -10,7 +10,7 @@ difficulty: 'intermediate'
 publishedAt: 2026-07-25
 sourceName: 'Threads / @3dongcode'
 sourceUrl: 'https://www.threads.com/@3dongcode/post/DV_PDZ6FLl9'
-draft: true
+draft: false
 ---
 
 ## Câu trả lời
