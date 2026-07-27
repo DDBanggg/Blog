@@ -4,6 +4,7 @@
 
 ### Added
 
+- QA tĩnh cho route, internal link, responsive layout và accessibility cơ bản.
 - Tìm kiếm toàn văn client-side từ search index được sinh lúc build.
 - SEO metadata, canonical URL, Open Graph, RSS, robots.txt và sitemap.
 - Trang `/interview/` và 48 trang chi tiết static với mục lục, metadata, nguồn và previous/next.

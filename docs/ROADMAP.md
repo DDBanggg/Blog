@@ -30,7 +30,7 @@
 - Deliverables: full-text search, metadata SEO, sitemap và RSS.
 - Exit criteria: kiểm tra index/search và metadata đạt yêu cầu.
 
-## Phase 5: Quality assurance and Cloudflare deployment — Chưa bắt đầu
+## Phase 5: Quality assurance and Cloudflare deployment — Hoàn thành
 
 - Mục tiêu: kiểm thử và phát hành static site.
 - Deliverables: QA checklist, cấu hình Cloudflare Pages, production deployment.

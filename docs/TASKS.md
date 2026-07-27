@@ -33,8 +33,8 @@
 
 ## Phase 5: Quality assurance and Cloudflare deployment
 
-- [ ] Thực hiện QA responsive, accessibility và liên kết.
-- [ ] Cấu hình và deploy Cloudflare Pages.
+- [x] Thực hiện QA responsive, accessibility và liên kết.
+- [x] Cấu hình và deploy Cloudflare Pages.
 
 ## Phase 6: Future improvements
 
