@@ -5,8 +5,8 @@
 - Mục tiêu: xác nhận static site sẵn sàng phát hành trên Cloudflare Pages.
 - Công việc đã thực hiện: kiểm tra build output, 48 route bài viết, RSS, sitemap, robots, responsive breakpoints, accessibility cơ bản và toàn bộ internal link; xác nhận deployment Cloudflare Pages thành công từ người quản lý dự án.
 - File quan trọng đã thay đổi: `README.md`, `docs/ROADMAP.md`, `docs/TASKS.md`, `docs/CHANGELOG.md`.
-- Kết quả kiểm tra: build output có 50 trang; 55 internal link đều hợp lệ; RSS có 48 item và search index có 48 entry. Deployment production được người quản lý dự án xác nhận thành công.
-- Vấn đề còn tồn tại: chưa có URL production trong nhật ký để thực hiện kiểm tra HTTP từ môi trường này; cần bảo đảm `site` trong `astro.config.mjs` khớp URL cuối cùng.
+- Kết quả kiểm tra: build output có 50 trang; 55 internal link đều hợp lệ; RSS có 48 item và search index có 48 entry. Production URL `https://data-engineering-interview-blog.pages.dev` trả HTTP 200 cho trang chủ, `/interview/`, RSS, sitemap và robots.
+- Vấn đề còn tồn tại: chưa có.
 - Bước tiếp theo: đánh giá Phase 6 theo phản hồi người đọc và nhu cầu cải tiến.
 
 ## 2026-07-25 — Đồng bộ lockfile cho Cloudflare Pages

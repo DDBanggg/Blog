@@ -34,4 +34,4 @@ Bài được đặt trong `src/content/interview/` và được kiểm tra bở
 
 ## Khả năng mở rộng và deploy
 
-Schema tập trung, layout tách biệt và route theo slug giúp bổ sung category, tag, RSS và search mà không thay đổi nội dung nguồn. Static build hiện tạo `rss.xml`, `robots.txt`, search index và sitemap. URL site trong `astro.config.mjs` là hostname Cloudflare Pages tạm thời và phải đổi sang domain production trước khi deploy. Ở bước sau, production output `dist/` sẽ được deploy lên Cloudflare Pages.
+Schema tập trung, layout tách biệt và route theo slug giúp bổ sung category, tag, RSS và search mà không thay đổi nội dung nguồn. Static build hiện tạo `rss.xml`, `robots.txt`, search index và sitemap. URL site trong `astro.config.mjs` khớp hostname Cloudflare Pages production. Ở bước sau, production output `dist/` được deploy lên Cloudflare Pages.
